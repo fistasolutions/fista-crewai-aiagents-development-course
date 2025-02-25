@@ -1,0 +1,20 @@
+[project]
+name = "flowdemo"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "“fistasolutions”", email = "fistasolutions@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "crewai>=0.95.0",
+    "litellm>=1.61.15",
+]
+
+[project.scripts]
+flowdemo = "flowdemo:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
