@@ -1,0 +1,7 @@
+write_blog:
+  description: >
+    Write a blog post about the {topic}.
+    Ensure the blog post is informative, engaging.
+  expected_output: >
+    A well-researched blog post about the {topic}.
+  agent: blog_writer
