@@ -1,0 +1,27 @@
+research_topic:
+  description: >
+    Research the topic "{topic}" thoroughly. Gather key information, statistics,
+    and relevant examples that will make the blog post informative and credible.
+  expected_output: >
+    A comprehensive research summary including key points, statistics, and examples
+    that can be used in the blog post.
+  agent: researcher
+
+write_blog_post:
+  description: >
+    Write a {word_count}-word blog post about "{topic}" using the research provided.
+    The post should be engaging, well-structured, and appropriate for the target audience.
+  expected_output: >
+    A well-written blog post draft that effectively communicates the topic
+    while maintaining reader engagement.
+  agent: writer
+  dependencies: [research_topic]
+
+edit_blog_post:
+  description: >
+    Review and edit the blog post for clarity, coherence, grammar, and style.
+    Ensure it meets the word count requirement and effectively communicates its message.
+  expected_output: >
+    A polished, final version of the blog post ready for publication.
+  agent: editor
+  dependencies: [write_blog_post] 
